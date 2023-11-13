@@ -1,0 +1,512 @@
+[
+  {
+    "model": "planetarium.planetariumdome",
+    "pk": 1,
+    "fields": {
+      "name": "Stellar Observatory",
+      "rows": 28,
+      "seats_in_row": 32
+    }
+  },
+  {
+    "model": "planetarium.planetariumdome",
+    "pk": 2,
+    "fields": {
+      "name": "Cosmic Arena",
+      "rows": 22,
+      "seats_in_row": 25
+    }
+  },
+  {
+    "model": "planetarium.planetariumdome",
+    "pk": 3,
+    "fields": {
+      "name": "AstroSphere",
+      "rows": 26,
+      "seats_in_row": 22
+    }
+  },
+  {
+    "model": "planetarium.planetariumdome",
+    "pk": 4,
+    "fields": {
+      "name": "Nebula Pavilion",
+      "rows": 18,
+      "seats_in_row": 12
+    }
+  },
+  {
+    "model": "planetarium.showtheme",
+    "pk": 1,
+    "fields": {
+      "name": "Galactic Wonders"
+    }
+  },
+  {
+    "model": "planetarium.showtheme",
+    "pk": 2,
+    "fields": {
+      "name": "Astronomical Wonders"
+    }
+  },
+  {
+    "model": "planetarium.showtheme",
+    "pk": 3,
+    "fields": {
+      "name": "Stellar Exploration"
+    }
+  },
+  {
+    "model": "planetarium.showtheme",
+    "pk": 4,
+    "fields": {
+      "name": "Space Discoveries"
+    }
+  },
+  {
+    "model": "planetarium.showtheme",
+    "pk": 5,
+    "fields": {
+      "name": "Celestial Quest"
+    }
+  },
+  {
+    "model": "planetarium.showtheme",
+    "pk": 6,
+    "fields": {
+      "name": "AstroJourney"
+    }
+  },
+  {
+    "model": "planetarium.showtheme",
+    "pk": 7,
+    "fields": {
+      "name": "Mysteries of the Galaxy"
+    }
+  },
+  {
+    "model": "planetarium.astronomyshow",
+    "pk": 1,
+    "fields": {
+      "title": "Celestial Spectacular",
+      "description": "An enchanting show exploring the marvels of the universe.",
+      "show_themes": [1, 2]
+    }
+  },
+  {
+    "model": "planetarium.astronomyshow",
+    "pk": 2,
+    "fields": {
+      "title": "Starry Expedition",
+      "description": "Embark on a cosmic journey through the cosmos in this breathtaking astronomy show.",
+      "show_themes": [3, 4]
+    }
+  },
+  {
+    "model": "planetarium.astronomyshow",
+    "pk": 3,
+    "fields": {
+      "title": "Galactic Adventures",
+      "description": "Unravel the mysterious secrets of the galaxies in this mesmerizing astronomy presentation.",
+      "show_themes": [2, 4]
+    }
+  },
+  {
+    "model": "planetarium.astronomyshow",
+    "pk": 4,
+    "fields": {
+      "title": "Cosmic Insights",
+      "description": "Discover profound knowledge about the cosmos through this remarkable astronomy showcase.",
+      "show_themes": [4]
+    }
+  },
+  {
+    "model": "planetarium.showsession",
+    "pk": 1,
+    "fields": {
+      "show_time": "2024-10-08T13:00:00Z",
+      "astronomy_show": 1,
+      "planetarium_dome": 1
+    }
+  },
+  {
+    "model": "planetarium.showsession",
+    "pk": 2,
+    "fields": {
+      "show_time": "2024-10-09T13:00:00Z",
+      "astronomy_show": 2,
+      "planetarium_dome": 2
+    }
+  },
+  {
+    "model": "planetarium.showsession",
+    "pk": 3,
+    "fields": {
+      "show_time": "2024-10-10T13:00:00Z",
+      "astronomy_show": 3,
+      "planetarium_dome": 3
+    }
+  },
+  {
+    "model": "planetarium.showsession",
+    "pk": 4,
+    "fields": {
+      "show_time": "2024-10-11T13:00:00Z",
+      "astronomy_show": 4,
+      "planetarium_dome": 4
+    }
+  },
+  {
+    "model": "planetarium.showsession",
+    "pk": 5,
+    "fields": {
+      "show_time": "2024-10-12T13:00:00Z",
+      "astronomy_show": 4,
+      "planetarium_dome": 1
+    }
+  },
+  {
+    "model": "planetarium.showsession",
+    "pk": 6,
+    "fields": {
+      "show_time": "2024-10-13T13:00:00Z",
+      "astronomy_show": 3,
+      "planetarium_dome": 2
+    }
+  },
+  {
+    "model": "planetarium.showsession",
+    "pk": 7,
+    "fields": {
+      "show_time":"2024-10-14T13:00:00Z",
+      "astronomy_show": 1,
+      "planetarium_dome": 3
+    }
+  },
+  {
+    "model": "planetarium.showsession",
+    "pk": 8,
+    "fields": {
+      "show_time": "2024-10-15T13:00:00Z",
+      "astronomy_show": 2,
+      "planetarium_dome": 4
+    }
+  },
+  {
+    "model": "planetarium.reservation",
+    "pk": 1,
+    "fields": {
+      "created_at": "2022-08-09T09:06:18.876Z",
+      "user": 1
+    }
+  },
+  {
+    "model": "planetarium.reservation",
+    "pk": 2,
+    "fields": {
+      "created_at": "2022-08-09T09:06:18.876Z",
+      "user": 2
+    }
+  },
+  {
+    "model": "planetarium.reservation",
+    "pk": 3,
+    "fields": {
+      "created_at": "2022-08-09T09:06:18.876Z",
+      "user": 1
+    }
+  },
+  {
+    "model": "planetarium.reservation",
+    "pk": 4,
+    "fields": {
+      "created_at": "2022-08-09T09:06:18.876Z",
+      "user": 3
+    }
+  },
+    {
+    "model": "planetarium.reservation",
+    "pk": 5,
+    "fields": {
+      "created_at": "2022-08-09T09:06:18.876Z",
+      "user": 1
+    }
+  },
+    {
+    "model": "planetarium.reservation",
+    "pk": 6,
+    "fields": {
+      "created_at": "2022-08-09T09:06:18.876Z",
+      "user": 1
+    }
+  },
+    {
+    "model": "planetarium.reservation",
+    "pk": 7,
+    "fields": {
+      "created_at": "2022-08-09T09:06:18.876Z",
+      "user": 1
+    }
+  },
+  {
+    "model": "planetarium.ticket",
+    "pk": 1,
+    "fields": {
+      "show_session": 1,
+      "reservation": 1,
+      "row": 1,
+      "seat": 1
+    }
+  },
+  {
+    "model": "planetarium.ticket",
+    "pk": 2,
+    "fields": {
+      "show_session": 1,
+      "reservation": 1,
+      "row": 2,
+      "seat": 4
+    }
+  },
+  {
+    "model": "planetarium.ticket",
+    "pk": 3,
+    "fields": {
+      "show_session": 2,
+      "reservation": 1,
+      "row": 3,
+      "seat": 3
+    }
+  },
+  {
+    "model": "planetarium.ticket",
+    "pk": 4,
+    "fields": {
+      "show_session": 2,
+      "reservation": 1,
+      "row": 4,
+      "seat": 3
+    }
+  },
+  {
+    "model": "planetarium.ticket",
+    "pk": 5,
+    "fields": {
+      "show_session": 3,
+      "reservation": 1,
+      "row": 5,
+      "seat": 1
+    }
+  },
+  {
+    "model": "planetarium.ticket",
+    "pk": 6,
+    "fields": {
+      "show_session": 4,
+      "reservation": 1,
+      "row": 6,
+      "seat": 2
+    }
+  },
+  {
+    "model": "planetarium.ticket",
+    "pk": 7,
+    "fields": {
+      "show_session": 5,
+      "reservation": 1,
+      "row": 7,
+      "seat": 3
+    }
+  },
+  {
+    "model": "planetarium.ticket",
+    "pk": 8,
+    "fields": {
+      "show_session": 5,
+      "reservation": 2,
+      "row": 8,
+      "seat": 4
+    }
+  },
+  {
+    "model": "planetarium.ticket",
+    "pk": 9,
+    "fields": {
+      "show_session": 5,
+      "reservation": 2,
+      "row": 1,
+      "seat": 5
+    }
+  },
+  {
+    "model": "planetarium.ticket",
+    "pk": 10,
+    "fields": {
+      "show_session": 6,
+      "reservation": 2,
+      "row": 1,
+      "seat": 6
+    }
+  },
+  {
+    "model": "planetarium.ticket",
+    "pk": 11,
+    "fields": {
+      "show_session": 7,
+      "reservation": 3,
+      "row": 4,
+      "seat": 7
+    }
+  },
+  {
+    "model": "planetarium.ticket",
+    "pk": 12,
+    "fields": {
+      "show_session": 8,
+      "reservation": 3,
+      "row": 3,
+      "seat": 7
+    }
+  },
+  {
+    "model": "planetarium.ticket",
+    "pk": 13,
+    "fields": {
+      "show_session": 8,
+      "reservation": 3,
+      "row": 5,
+      "seat": 4
+    }
+  },
+  {
+    "model": "planetarium.ticket",
+    "pk": 14,
+    "fields": {
+      "show_session": 8,
+      "reservation": 4,
+      "row": 4,
+      "seat": 4
+    }
+  },
+  {
+    "model": "planetarium.ticket",
+    "pk": 15,
+    "fields": {
+      "show_session": 1,
+      "reservation": 4,
+      "row": 2,
+      "seat": 3
+    }
+  },
+  {
+    "model": "planetarium.ticket",
+    "pk": 16,
+    "fields": {
+      "show_session": 2,
+      "reservation": 4,
+      "row": 5,
+      "seat": 3
+    }
+  },
+  {
+    "model": "planetarium.ticket",
+    "pk": 17,
+    "fields": {
+      "show_session": 2,
+      "reservation": 5,
+      "row": 10,
+      "seat": 11
+    }
+  },
+  {
+    "model": "planetarium.ticket",
+    "pk": 18,
+    "fields": {
+      "show_session": 2,
+      "reservation": 5,
+      "row": 11,
+      "seat": 12
+    }
+  },
+  {
+    "model": "planetarium.ticket",
+    "pk": 19,
+    "fields": {
+      "show_session": 2,
+      "reservation": 5,
+      "row": 13,
+      "seat": 14
+    }
+  },
+  {
+    "model": "planetarium.ticket",
+    "pk": 20,
+    "fields": {
+      "show_session": 2,
+      "reservation": 6,
+      "row": 18,
+      "seat": 14
+    }
+  },
+  {
+    "model": "planetarium.ticket",
+    "pk": 20,
+    "fields": {
+      "show_session": 3,
+      "reservation": 7,
+      "row": 19,
+      "seat": 14
+    }
+  },
+  {
+    "model": "user.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$oZqdjfUqKC500V7kk3kMmb$TBVlOMhfJxWrxbUnNpWZK0+rYM242g7do/YM5tkhn+M=",
+      "last_login": null,
+      "is_superuser": true,
+      "first_name": "Admin",
+      "last_name": "User",
+      "email": "admin@planetarium.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2022-08-09T09:06:18.876Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "user.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$73Z1Y57bcoscZ37s9rE9v0$4SEQ0TtXwJKzO5/CRdFSrTifatiPjkZ38gM2H8Kqsdg=",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "Ivan",
+      "last_name": "Khripko",
+      "email": "ivan.khripko@planetarium.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-08-09T09:06:18.876Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "user.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$QtPol3T7x9quBj4BnbnVwW$UwT4kihkRfSvQEWEeuqVKwMgis2ikKVZfJDBcQMvOKY=",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "Mykola",
+      "last_name": "Hmara",
+      "email": "mykola.hmara@planetarium.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-08-09T09:06:18.876Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  }
+]
